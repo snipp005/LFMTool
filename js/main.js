@@ -46,8 +46,8 @@ window.onload = function () {
 		fillResultField();
 	})
 	
-	$('#d2 option').click(function () {
-		d2 = $(this).html();
+	$('#d2').change(function () {
+		d2 = this.value;
 		fillResultField();
 	})
 	
