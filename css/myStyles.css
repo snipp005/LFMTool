@@ -1,0 +1,119 @@
+body {
+	background-color: grey;
+}
+
+#window {
+	margin-top: 100px;
+}
+
+#mainTable {
+	margin: auto;
+	border: 1px solid black;
+	padding: 20px;
+	width: 800px;
+}
+
+#mainTable td {
+	padding: 10px;
+	vertical-align: top;
+}
+
+#rolesTable {
+	padding: 0px 20px 0px 5px;
+	margin-top: -5px;
+}
+
+table#rolesTable td {
+	/*display: flex;*/
+}
+
+table#rolesTable td label {
+	margin-left: 10px;
+}
+
+fieldset {
+	border: 1px solid;
+}
+
+legend {
+	margin-left: 10px;
+	padding: 0px 1px;
+}
+
+.icon {
+	margin-top: -4px;
+}
+
+.dropdown dt {
+	border-radius: 4px;
+	background: #E9E9ED url('../icons/img_294.png') no-repeat scroll right center;
+	background-size: 8.9px;
+	background-position-x: 97.7%;
+}
+
+.dropdown dt:hover {
+	background: #c4c4c7 url('../icons/img_294.png') no-repeat scroll right center;
+	background-size: 8.9px;
+	background-position-x: 97.7%;
+}
+
+.dropdown > dt > span {
+	pointer-events: none;
+}
+
+dd {
+	display: none;
+	margin-left: 0;
+	margin-top: 1px;
+	background-color: #E9E9ED;
+	border-radius: 4px;
+	position: fixed;
+	z-index: 99999;
+}
+
+dd, dt {
+	width: 240px;
+}
+
+dd ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+dd ul li {
+	cursor: default;
+}
+
+dd ul li:hover {
+	background-color: #9c9c9e;
+}
+
+#result {
+	background-color: #E9E9ED;
+	padding: 10px;
+	border-radius: 4px;
+	width: 700px;
+	display: block;
+	margin: 10px auto auto;
+	cursor: pointer;
+}
+
+#alertBox {
+	margin: auto;
+	display: none;
+	text-align: center;
+}
+
+#alertTextBox {
+	background-color: white;
+	display: inline-block;
+	padding: 20px;
+	top: 20px;
+	position: relative;
+	border-radius: 4px;
+}
+
+#alertText {
+	color: black;
+	font-size: 10pt;
+}
