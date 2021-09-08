@@ -125,49 +125,72 @@
 			</td>
 			<td>
 				<fieldset style="border: 1px solid">
-					<legend>Mark</legend>
-					<dl id="sample" class="dropdown" style="margin: 0; padding: 10px 20px 15px 15px;">
-						<dt style="padding-left: 5px; width: 236px;"><span>None</span></dt>
-						<dd style="padding-left: 5px; width: 236px;">
-							<ul>
-								<li>
-									<span data-value="">None</span>
-								</li>
-								<li>
-									<img class="icon" src="icons/Star.png">
-									<span data-value="rt1">Star</span>
-								</li>
-								<li>
-									<img class="icon" src="icons/Circle.png">
-									<span data-value="rt2">Circle</span>
-								</li>
-								<li>
-									<img class="icon" src="icons/Diamond.png">
-									<span data-value="rt3">Diamond</span>
-								</li>
-								<li>
-									<img class="icon" src="icons/Triangle.png">
-									<span data-value="rt4">Triangle</span>
-								</li>
-								<li>
-									<img class="icon" src="icons/Moon.png">
-									<span data-value="rt5">Moon</span>
-								</li>
-								<li>
-									<img class="icon" src="icons/Square.png">
-									<span data-value="rt6">Square</span>
-								</li>
-								<li>
-									<img class="icon" src="icons/Cross.png">
-									<span data-value="rt7">Cross</span>
-								</li>
-								<li>
-									<img class="icon" src="icons/Skull.png">
-									<span data-value="rt8">Skull</span>
-								</li>
-							</ul>
-						</dd>
-					</dl>
+					<legend>Channel & Mark</legend>
+						 <div class="row">							
+							<div class="column">
+								<div style="display: flex; padding: 10px 20px 15px 15px;">
+									<!--TODO: Kommentar Channel-->
+									<select name="channel" style="position: relative; width: 140px;" id="d3">
+										<option style="display:none"></option>
+										<option>/1</option>
+										<option>/2</option>
+										<option>/3</option>
+										<option>/4</option>
+										<option>/5</option>
+										<option>/6</option>
+										<option>/7</option>
+										<option>/8</option>
+										<option>/9</option>
+										<option>/g</option>
+									</select>
+								</div>
+							</div>
+							<div class="column">
+								<dl id="sample" class="dropdown" style="margin: 0; padding: 10px 20px 15px 15px;">
+									<dt style="padding-left: 5px; width: 150px;"><span>None</span></dt>
+									<dd style="padding-left: 5px; width: 150px;">
+										<ul>
+											<li>
+												<span data-value="">None</span>
+											</li>
+											<li>
+												<img class="icon" src="icons/Star.png">
+												<span data-value="rt1">Star</span>
+											</li>
+											<li>
+												<img class="icon" src="icons/Circle.png">
+												<span data-value="rt2">Circle</span>
+											</li>
+											<li>
+												<img class="icon" src="icons/Diamond.png">
+												<span data-value="rt3">Diamond</span>
+											</li>
+											<li>
+												<img class="icon" src="icons/Triangle.png">
+												<span data-value="rt4">Triangle</span>
+											</li>
+											<li>
+												<img class="icon" src="icons/Moon.png">
+												<span data-value="rt5">Moon</span>
+											</li>
+											<li>
+												<img class="icon" src="icons/Square.png">
+												<span data-value="rt6">Square</span>
+											</li>
+											<li>
+												<img class="icon" src="icons/Cross.png">
+												<span data-value="rt7">Cross</span>
+											</li>
+											<li>
+												<img class="icon" src="icons/Skull.png">
+												<span data-value="rt8">Skull</span>
+											</li>
+										</ul>
+									</dd>
+								</dl>
+							</div>
+						</div> 
+					
 				</fieldset>
 				
 				<fieldset style="border: 1px solid; margin-top: 6px;">
