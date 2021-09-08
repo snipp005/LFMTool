@@ -1,5 +1,6 @@
 var d1 = '';
 var d2 = '';
+var d3 = '';
 
 var daily;
 var c1;
@@ -15,6 +16,7 @@ window.onload = function () {
 	})
 	$('html').attr('nighteye', 'disabled')
 	$('#d2').val('')
+	$('#d3').val('')
 	$(".dropdown").click(function () {
 		$(".dropdown dd").toggle();
 	});
@@ -49,6 +51,11 @@ window.onload = function () {
 	$('#d2').change(function () {
 		d2 = this.value;
 		fillResultField();
+	})
+	
+	$('#d3').change(function () {
+	d3 = this.value;
+	fillResultField();
 	})
 	
 	$('.rolecb').click(function () {
@@ -128,7 +135,7 @@ function fillResultField() {
 			css += v + ', ';
 		}
 	})
-	var text = (d1 ? d1 + ' ' : '') + 'LFM' + (css ? ' ' + css : '') + (css && d2 ? ' - ' : '') + (d2 ? css ? d2 : ' ' + d2 : '') + (daily && d2 ? ' ' + daily : '')+ (c1 && d2 ? ' ' + c1 : '') + (d1 ? ' ' + d1 : '');
+	var text = (d3 ? d3 + ' ' : '') + (d1 ? d1 + ' ' : '') + 'LFM' + (css ? ' ' + css : '') + (css && d2 ? ' - ' : '') + (d2 ? css ? d2 : ' ' + d2 : '') + (daily && d2 ? ' ' + daily : '')+ (c1 && d2 ? ' ' + c1 : '') + (d1 ? ' ' + d1 : '');
 	$('#result').attr('value', text);
 }
 
